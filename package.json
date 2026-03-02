@@ -1,6 +1,6 @@
 {
   "name": "@nwo/stan",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "an agent that stays on standby",
   "main": "index.js",
   "bin": {
