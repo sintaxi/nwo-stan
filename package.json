@@ -1,0 +1,20 @@
+{
+  "name": "@nwo/stan",
+  "version": "0.0.1",
+  "description": "an agent that stays on standby",
+  "main": "index.js",
+  "bin": {
+    "stan": "bin/stan"
+  },
+  "scripts": {
+    "preversion": "npm test",
+    "version": "npm run build && npm publish",
+    "postversion": "git push && git push --tags --no-verify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brock Whitten <brock@sintaxi.com>",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}

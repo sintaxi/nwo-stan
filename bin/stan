@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+var minimist = require("minimist")
+var pkg = require("../package.json")
+
+var argv = minimist(process.argv.slice(2), {
+  boolean: ["help", "version"],
+  alias: { h: "help", v: "version" }
+})
+
+if (argv.version) {
+  console.log(pkg.version)
+  process.exit(0)
+}
+
+if (argv.help) {
+  console.log([
+    "",
+    "  " + pkg.description,
+    "",
+    "  Usage:",
+    "    stan [options]",
+    "",
+    "  Options:",
+    "    -h, --help     Show this help message",
+    "    -v, --version  Show version number",
+    ""
+  ].join("\n"))
+  process.exit(0)
+}
+
+console.log("stan is on standby")
