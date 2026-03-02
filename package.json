@@ -1,6 +1,6 @@
 {
   "name": "@nwo/stan",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "an agent that stays on standby",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "preversion": "npm test",
-    "version": "npm publish",
+    "version": "npm publish --access public",
     "postversion": "git push && git push --tags --no-verify",
     "test": "echo \"Error: no test specified\""
   },
